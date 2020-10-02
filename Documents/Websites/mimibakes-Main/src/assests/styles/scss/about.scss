@@ -1,0 +1,34 @@
+@import "./Mixins";
+@import "./Variables";
+
+// **********************
+
+.about-s {
+  @include gridLayout();
+  background-color: $panelColor;
+  h2 {
+    margin-top: 1em;
+  }
+  .hr-short {
+    @include hrShort();
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.mimie-portrait {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-image: url("../../images/mimie-portrait.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2.5em auto;
+}
+.about__content p {
+  width: 80%;
+  margin: 0 auto 2.5em;
+}

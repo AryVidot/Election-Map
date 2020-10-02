@@ -1,0 +1,45 @@
+@import "../../assests/styles/scss/Mixins";
+
+.meet {
+  @include gridLayout();
+  grid-template-columns: 1fr 1fr;
+}
+
+.meet__item {
+  @include bckgdPosition();
+
+  color: rgb(51, 47, 48);
+  padding: 10px;
+  margin: 1.2em 0;
+  height: 450px;
+  background-image: url(../../assests/images/mimie-portrait.jpg);
+  &:nth-child(even) {
+    background-image: url(https://images.pexels.com/photos/4191621/pexels-photo-4191621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  }
+}
+
+.about-m,
+.contact-m {
+  position: relative;
+  a {
+    @include btn();
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+  }
+}
+
+// MEDIA QUERY
+
+@media (max-width: 1000px) {
+  .meet {
+    grid-template-columns: 1fr;
+  }
+  .meet__item:nth-child(odd) {
+    margin-bottom: 0;
+  }
+
+  .meet__item:nth-child(even) {
+    margin-top: 0;
+  }
+}

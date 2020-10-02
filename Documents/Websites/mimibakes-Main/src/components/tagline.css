@@ -1,0 +1,34 @@
+.tagline {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  height: 7em;
+  margin: 0 auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 1.2em;
+}
+
+.tagline__content {
+  margin-top: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #b38c71;
+  padding: 10px;
+}
+
+h5 {
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  margin: 0;
+}
+/*# sourceMappingURL=tagline.css.map */

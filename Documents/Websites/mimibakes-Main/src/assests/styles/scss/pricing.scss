@@ -1,0 +1,40 @@
+@import "./Mixins";
+@import "./Variables";
+
+// **********************
+
+.pricing {
+  @include gridLayout();
+}
+
+.gridContainer {
+  @include gridLayout();
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-template-rows: 30vh;
+  .gridItem {
+    background: url("https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    @include bckgdPosition();
+    position: relative;
+    span {
+      @include btn();
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      a {
+        color: $fontColor;
+      }
+    }
+  }
+  .gridItem:nth-child(even) {
+    background: url("https://images.pexels.com/photos/1835765/pexels-photo-1835765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    @include bckgdPosition();
+  }
+}
+// MEDIA QUERY
+
+// @media (max-width: 1000px) {
+//   .gridContainer {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//   }
+// }

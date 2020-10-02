@@ -1,0 +1,55 @@
+@import "../../assests/styles/scss/Mixins";
+@import "../../assests/styles/scss/_Variables";
+
+.wrapper {
+  @include gridLayout();
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70vh;
+}
+
+.item {
+  @include bckgdPosition();
+  @include flexCenter();
+
+  padding: 10px;
+  flex-direction: column;
+  h2 {
+    line-height: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  a {
+    @include btn();
+  }
+}
+
+.item1 {
+  @include bckgdPosition();
+  background-image: url(https://sugargeekshow.com/wp-content/uploads/2020/03/rainbow-cake-featured-scaled.jpg);
+}
+
+.item:nth-child(even) {
+  background: $panelColor;
+}
+
+.item3 {
+  @include bckgdPosition();
+  height: auto;
+  background-image: url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/118630009_10158501489930149_3276899352127380494_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_ohc=cJm9KmieiPMAX-FQzNC&_nc_ht=scontent-lhr8-1.xx&oh=3b703942080f927debfa72d4c2e707ba&oe=5F927D93);
+}
+
+// MEDIA QUERY
+
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh;
+  }
+  .item3 {
+    display: none;
+    @include bckgdPosition();
+    height: auto;
+    background-image: url(https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/118630009_10158501489930149_3276899352127380494_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_ohc=cJm9KmieiPMAX-FQzNC&_nc_ht=scontent-lhr8-1.xx&oh=3b703942080f927debfa72d4c2e707ba&oe=5F927D93);
+  }
+}

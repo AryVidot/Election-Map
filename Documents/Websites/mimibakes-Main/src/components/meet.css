@@ -1,0 +1,25 @@
+.meet {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2em;
+}
+
+.meet__item {
+  color: crimson;
+  padding: 10px;
+  margin: 1.2em 0;
+  height: 450px;
+  background-image: url(../assests/images/mimie-portrait.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.meet__item:nth-child(even) {
+  background-image: url(https://images.pexels.com/photos/1184265/pexels-photo-1184265.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+}
+/*# sourceMappingURL=meet.css.map */

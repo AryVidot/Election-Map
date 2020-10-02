@@ -1,0 +1,25 @@
+@import "../../assests/styles/scss/Mixins";
+
+.tagline {
+  @include gridLayout();
+
+  height: 7em;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+
+.tagline__content {
+  @include flexCenter();
+  background: url(https://images.pexels.com/photos/592392/pexels-photo-592392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  @include bckgdPosition();
+  background-attachment: fixed;
+  margin-top: 1.2em;
+  // background: rgb(179, 140, 113);
+  padding: 10px;
+}
+
+h5 {
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  margin: 0;
+}

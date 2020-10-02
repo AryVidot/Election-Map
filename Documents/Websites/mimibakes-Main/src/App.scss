@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  font-family: "Roboto";
+}
+
+// links
+a:link {
+  list-style: none;
+  text-decoration: none;
+  margin: 1em;
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #333;
+  width: 90%;
+  margin: 1rem auto;
+}

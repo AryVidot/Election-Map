@@ -1,0 +1,14 @@
+@import "../../assests/styles/scss/style.scss";
+@import "../../assests/styles/scss/Mixins";
+@import "../../assests/styles/scss/Variables";
+
+// **********************
+
+$socialColor: rgb(255, 221, 210);
+
+.si-c {
+  color: $socialColor;
+  &:hover {
+    color: lighten($socialColor, 2);
+  }
+}
