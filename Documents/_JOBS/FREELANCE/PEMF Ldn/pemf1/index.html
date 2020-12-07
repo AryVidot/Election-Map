@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/0148eaae50.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yrSpan = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        yrSpan.textContent = currentYear;
+      });
+    </script>
+        <!-- Cookies Script Starts-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <!-- Cookies Script Ends-->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>PEMF Therapy</title>
+    <!-- Can add <abbr title="Pulsed Electtromagnetic Field"> -->
+</head>
+<body>
+    <!-- Navigation Starts-->
+    <header>
+        <img class="logo" src="images/logoSmall.jpg" alt="logo">
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__link"><a id="about" href="./pages/about/about.html">About</a></li>
+                <li class="nav__link"><a href="#" id="contact">Contact</a></li>
+            </ul> 
+        </nav>
+        </header>
+    <!-- Navigation Ends-->
+
+    <main>
+        <!-- Hero Starts -->
+        <section id="home"class="hero">
+            <div class="ctnr">
+                <div class="top">
+                    <h1>Happiness and Success <br> with PEMF <span>Therapy</span></h1>
+                </div>
+            </div>
+            <div class="hero__ctnr ctnr">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="hero__content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor sit amet. Ipsum dolor sit amet consectetur.</p>
+                        <a href="#contact"class="btn" type="button">Hire Now</a>
+                        <a href="#contact"class="btn" type="button">Learn More</a>
+
+                    </div>
+                </div>
+                <!-- <picture class="right">
+                    <source srcset="">
+                    <img src="images/pemf-mat.jpg" alt="Pemf Matt" width="300px">
+                </picture> -->
+            </div>
+        </section>
+        <!-- Hero Ends -->
+
+        <div class="slant-line1"></div>
+        
+        <section class="video">
+            <iframe width="300" src="https://www.youtube.com/embed/ieTjXm9SiF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <p>Lorem, ipsum dolor.</p>
+            <a class="btn" type="button">Learn More</a>
+        </section>
+        
+        <div class="slant-line2"></div>
+        
+        <!-- Testimonial Slide starts-->
+        <section class="carrousel">
+            <h2>Users Reviews</h2>
+                <input type="radio" name="slides" id="radio-1" checked>
+                <input type="radio" name="slides" id="radio-2" >
+                <input type="radio" name="slides" id="radio-3" >
+            <ul>
+                <li class="slide">
+                    <p>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</q>
+                        <span class="author">John D</span>
+                    </p>
+                </li>
+                <li class="slide">
+                    <p>
+                        <q>Lorem ipsum dolor sit amet.</q>
+                        <span>Elisa</span>
+                    </p>
+                </li>
+                <li class="slide">
+                    <p>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, in?</q>
+                        <span>Peter</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="slides__navigation">
+                <label for="radio-1" id="dotForRadio-1"></label>
+                <label for="radio-2" id="dotForRadio-2"></label>
+                <label for="radio-3" id="dotForRadio-3"></label>
+            </div>
+        </section>
+        <!-- Testimonial Slide ends-->
+
+
+        <div class="slant-line3"></div>
+
+        <section  class="contact">
+            <h1>Contact us</h1>
+                <h2>The professional care you deserve</h2>
+                    <p>Please contact us directly with any questions, comments, or inquiries you may have.</p>
+
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@pemflondon.co.uk">info@pemflondon.co.uk</a></p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+44 123456789"></a>+44 1234 56789</p>
+                <h3>Working Hours</h3>
+                    <p>Monday - Friday@ 17:00 - 21:00</p>
+                    <!--  -->
+                    <img src="images/pemf-mat-box.jpg" alt="pemf mat box" width="300px">
+        </section>
+    </main>
+    <footer>
+        <div class="ctnr">
+            <a href="http://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+
+            <!-- Social Media Starts -->
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play " ></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-facebook-square'></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-instagram'></i></a>
+            <!-- Social media Ends -->
+
+            <p><span class="year">2019</span> PEMF Therapy</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    
+    <!-- Cookies Script Starts-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#84d9c9",
+        "text": "#071359"
+        },
+        "button": {
+        "background": "#422bd9",
+        "text": "#f2f2f2"
+        }
+    },
+    "content": {
+        "dismiss": "OK"
+    }
+    });
+    </script>
+    <!-- Cookies Script Ends-->
+
+</body>
+</html>
