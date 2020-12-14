@@ -22,49 +22,63 @@
 <body>
     <!-- Navigation Starts-->
     <header>
-        <img class="logo" src="images/logoSmall.jpg" alt="logo">
-        <nav class="nav">
-            <ul class="nav__items">
-                <li class="nav__link"><a id="about" href="./pages/about/about.html">About</a></li>
-                <li class="nav__link"><a href="#" id="contact">Contact</a></li>
-            </ul> 
-        </nav>
-        </header>
+        <div class="ctnr">
+            <div class="nav">
+                <a href="index.html">
+                    <img class="logo" src="images/logoSmall.jpg" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav__items">
+                        <li class="nav__link"><a id="about" href="./pages/about/about.html">About</a></li>
+                        <li class="nav__link"><a id="contact" href="#contact" >Contact</a></li>
+                    </ul> 
+                </nav>
+            </div>
+    
+        </div>
+    </header>
     <!-- Navigation Ends-->
 
     <main>
+        <!-- Title Starts -->
+        <div class="ctnr">
+            <div class="top">
+                <h1>Happiness and Success <br> with PEMF <span>Therapy</span></h1>
+            </div>
+        </div>
+        <!-- Title Ends  -->
+
         <!-- Hero Starts -->
         <section id="home"class="hero">
             <div class="ctnr">
-                <div class="top">
-                    <h1>Happiness and Success <br> with PEMF <span>Therapy</span></h1>
-                </div>
-            </div>
-            <div class="hero__ctnr ctnr">
+                <!-- image here -->
                 <div class="left"></div>
+                <!-- content here -->
                 <div class="right">
                     <div class="hero__content">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor sit amet. Ipsum dolor sit amet consectetur.</p>
-                        <a href="#contact"class="btn" type="button">Hire Now</a>
-                        <a href="#contact"class="btn" type="button">Learn More</a>
-
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor sit amet. Ipsum dolor sit amet consectetur.  Ipsum dolor sit amet consectetur.</p>
+                        <!-- <div class="cta"> -->
+                            <a id="#contact"class="btn" type="button">Hire Now</a>
+                            <a href="./pages/about/about.html" class="btn" type="button">Learn More</a>
+                        <!-- </div> -->
                     </div>
                 </div>
-                <!-- <picture class="right">
-                    <source srcset="">
-                    <img src="images/pemf-mat.jpg" alt="Pemf Matt" width="300px">
-                </picture> -->
             </div>
         </section>
         <!-- Hero Ends -->
-
+    
         <div class="slant-line1"></div>
-        
+            
         <section class="video">
-            <iframe width="300" src="https://www.youtube.com/embed/ieTjXm9SiF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <p>Lorem, ipsum dolor.</p>
-            <a class="btn" type="button">Learn More</a>
+            <div class="ctnr">
+                <div class="iframe-ctnr">
+                    <iframe src="https://www.youtube.com/embed/ieTjXm9SiF0?start=7" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                </div>
+                <p>Lorem, ipsum dolor.</p>
+                <a class="btn" type="button">Learn More</a>
+            </div>
         </section>
-        
+            
         <div class="slant-line2"></div>
         
         <!-- Testimonial Slide starts-->
@@ -103,9 +117,10 @@
 
 
         <div class="slant-line3"></div>
-
-        <section  class="contact">
-            <h1>Contact us</h1>
+    
+        <section  id="contact" class="contact">
+            <div class="ctnr">
+                <h1>Contact us</h1>
                 <h2>The professional care you deserve</h2>
                     <p>Please contact us directly with any questions, comments, or inquiries you may have.</p>
 
@@ -115,19 +130,30 @@
                     <p>Monday - Friday@ 17:00 - 21:00</p>
                     <!--  -->
                     <img src="images/pemf-mat-box.jpg" alt="pemf mat box" width="300px">
+
+            </div>
         </section>
+  
     </main>
+
     <footer>
         <div class="ctnr">
-            <a href="http://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-
-            <!-- Social Media Starts -->
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play " ></i></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-facebook-square'></i></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-instagram'></i></a>
-            <!-- Social media Ends -->
-
-            <p><span class="year">2019</span> PEMF Therapy</p>
+            <div class="inner-ctnr">
+                <div class="tc">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+                </div>
+                <div class="socials">
+                    <!-- Social Media Starts -->
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play " ></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-facebook-square'></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-instagram'></i></a>
+                    <!-- Social media Ends -->
+                </div>
+                <div class="copyright">
+                    <p><span class="year">2019</span> PEMF Therapy</p>
+                </div>
+    
+            </div>
         </div>
     </footer>
 

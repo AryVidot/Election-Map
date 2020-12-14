@@ -1,0 +1,72 @@
+.top {
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  //   @include flexGen;
+  // background: $test-clr;
+  .ctnr {
+    width: 90%;
+    height: 100%;
+    // max-width: 1000px;
+    margin: 0 auto;
+    @include flexGen;
+  }
+
+  .left {
+    width: 60%;
+    padding-top: 40vh;
+    max-width: 900px;
+    // height: 500px;
+    background: url("../../images/pemf-mat.jpg") no-repeat center / cover;
+    background-color: $test-clr;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: -40%;
+  }
+
+  .right {
+    width: 60%;
+    padding-top: 30vh;
+    // min-height: 200px;
+    background-color: $highlight-clr;
+    background-color: transparent;
+    @include flexGen;
+    padding: 5vh;
+    border: 1px solid $tertiary-clr;
+    border-radius: 10px;
+    margin-left: -50%;
+    margin-bottom: 10%;
+  }
+}
+
+.hero__content {
+  background: transparent;
+  p {
+    background: transparent;
+    font-family: $title-font;
+    // font-size: 2vw;
+    letter-spacing: 1px;
+    line-height: 4.5vh;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .ctnr {
+    flex-direction: column;
+    .left {
+      width: 90%;
+      margin: 0;
+    }
+    .right {
+      width: 60%;
+      margin-left: 0;
+      background: $test-clr;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      margin-top: -5%;
+    }
+  }
+}

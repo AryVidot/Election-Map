@@ -1,8 +1,11 @@
-header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10px;
+  // padding: 20px 10px;
+  // position: sticky;
+  // top: 0;
+  // z-index: 10;
 }
 
 .logo {
@@ -13,7 +16,7 @@ header {
   list-style: none;
   li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     a {
       font-weight: 600;
       transition: all 0.3s ease 0s;

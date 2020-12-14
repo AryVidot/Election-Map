@@ -7,8 +7,15 @@
   background: #f2f2f2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 2vw;
 }
 
 a {
@@ -18,6 +25,20 @@ a {
 
 li {
   list-style: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.ctnr {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.5vw;
 }
 
 * {
@@ -28,8 +49,15 @@ li {
   background: #f2f2f2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 2vw;
 }
 
 a {
@@ -41,7 +69,17 @@ li {
   list-style: none;
 }
 
-header {
+section {
+  padding: 5rem 0;
+}
+
+.ctnr {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +89,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 10px;
 }
 
 .logo {
@@ -64,7 +101,7 @@ header {
 
 .nav__items li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .nav__items li a {
@@ -75,6 +112,96 @@ header {
 
 .nav__items li a:hover {
   color: #005eb8;
+}
+
+.top {
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.hero .ctnr {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .left {
+  width: 60%;
+  padding-top: 40vh;
+  max-width: 900px;
+  background: url("../../images/pemf-mat.jpg") no-repeat center/cover;
+  background-color: pink;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-right: -40%;
+}
+
+.hero .right {
+  width: 60%;
+  padding-top: 30vh;
+  background-color: #84d9c9;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh;
+  border: 1px solid #005eb8;
+  border-radius: 10px;
+  margin-left: -50%;
+  margin-bottom: 10%;
+}
+
+.hero__content {
+  background: transparent;
+}
+
+.hero__content p {
+  background: transparent;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+  line-height: 4.5vh;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .ctnr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ctnr .left {
+    width: 90%;
+    margin: 0;
+  }
+  .ctnr .right {
+    width: 60%;
+    margin-left: 0;
+    background: pink;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: -5%;
+  }
 }
 
 .btn {

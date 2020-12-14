@@ -5,8 +5,15 @@
   background: $primary-clr;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 2vw;
 }
 
 a {
@@ -16,4 +23,16 @@ a {
 
 li {
   list-style: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+.ctnr {
+  padding: 2rem;
+
+  margin: 0 auto;
+  // margin: 5%;
+  width: 90%;
+  // @include flexGen;
 }
