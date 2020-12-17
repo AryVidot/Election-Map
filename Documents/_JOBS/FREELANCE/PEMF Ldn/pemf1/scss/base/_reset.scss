@@ -13,7 +13,7 @@ body {
   font-family: "Raleway", sans-serif;
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 2vw;
+  font-size: 1em;
 }
 
 a {
@@ -25,14 +25,9 @@ li {
   list-style: none;
 }
 
-section {
-  padding: 5rem 0;
-}
 .ctnr {
-  padding: 2rem;
-
   margin: 0 auto;
-  // margin: 5%;
+  padding-bottom: 2rem;
+  // background: chartreuse;
   width: 90%;
-  // @include flexGen;
 }

@@ -1,11 +1,22 @@
+.video{
+  max-width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+
+  .ctnr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;    
+  }
+}
 .iframe-ctnr {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+  // equals 16:9
   height: 0;
-  .ctnr {
-    flex-direction: column;
-  }
+  
   iframe {
     position: absolute;
     top: 0;

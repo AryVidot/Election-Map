@@ -1,8 +1,9 @@
-.btn {
+.cta {
   color: $primary-clr;
   padding: 0.5rem 0.8rem;
   margin: 0;
   margin-right: 1rem;
+  margin-top: 0.5rem;
   background: $tertiary-clr;
   font-size: 1rem;
   font-weight: bold;
@@ -15,6 +16,6 @@
   transition: all 0.3s ease 0s;
 }
 
-.btn:hover {
+.cta:hover {
   background: $tertiary-light-clr;
 }
