@@ -23,7 +23,7 @@
     background: url("../../images/pemf-mat.jpg") no-repeat center / cover;
     background-color: $test-clr;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: -40%;
   }
 
@@ -36,7 +36,7 @@
     @include flexGen;
     padding: 2.5vh;
     // border: 1px solid $tertiary-clr;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: -50%;
     margin-bottom: 10%;
     p{
