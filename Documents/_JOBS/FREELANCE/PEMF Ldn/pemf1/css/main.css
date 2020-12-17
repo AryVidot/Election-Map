@@ -16,6 +16,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   font-size: 1em;
+  color: #071359;
 }
 
 a {
@@ -37,6 +38,10 @@ h1 {
   font-size: 3em;
 }
 
+span {
+  color: #84d9c9;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +59,7 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   font-size: 1em;
+  color: #071359;
 }
 
 a {
@@ -205,6 +211,7 @@ header {
   .ctnr .right {
     width: 90%;
     margin-left: 0;
+    background: rgba(132, 217, 201, 0.7);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
             box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     margin-top: -15%;
@@ -236,6 +243,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.video .ctnr p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.video .ctnr .cta {
+  margin-right: 0;
 }
 
 .iframe-ctnr {
@@ -276,8 +292,8 @@ header {
   background: rgba(0, 94, 184, 0.7);
 }
 
-/* Carrousel */
-.carrousel {
+/* Carousel */
+.carousel {
   background: #f2f2f2;
   text-align: center;
   padding: 4em 0;
@@ -288,7 +304,7 @@ header {
   overflow: hidden;
 }
 
-.carrousel h2 {
+.carousel h2 {
   margin: 0;
   margin-top: -1.7em;
   padding: 0;
@@ -297,7 +313,7 @@ header {
   color: #005eb8;
 }
 
-.carrousel .slides {
+.carousel .slides {
   width: 400%;
   left: 0;
   padding-left: 0;
@@ -311,17 +327,17 @@ header {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.carrousel .slides li {
+.carousel .slides li {
   width: 25%;
   position: relative;
   float: left;
 }
 
-.carrousel li p {
+.carousel li p {
   margin-top: 0;
 }
 
-.carrousel li q {
+.carousel li q {
   max-width: 90%;
   margin: auto;
   color: #071359;
@@ -330,7 +346,7 @@ header {
 }
 
 /* Author */
-.carrousel li span.author {
+.carousel li span.author {
   margin-top: 0.5em;
   font-size: 1.2em;
   color: #f2e85e;
@@ -338,7 +354,7 @@ header {
 }
 
 /*  Fonctionality */
-.carrousel .slidesNavigation {
+.carousel .slidesNavigation {
   display: block;
   list-style: none;
   text-align: center;
@@ -349,11 +365,11 @@ header {
   margin-left: -52px;
 }
 
-.carrousel input {
+.carousel input {
   display: none;
 }
 
-.carrousel .slidesNavigation label {
+.carousel .slidesNavigation label {
   float: left;
   margin: 6px;
   display: block;
@@ -385,14 +401,14 @@ header {
           transform: translateX(-75%);
 }
 
-.carrousel .slidesNavigation label:hover {
+.carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
 
-.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
-.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
-.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
-.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+.carousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
   background: #84d9c9;
 }
 /*# sourceMappingURL=main.css.map */

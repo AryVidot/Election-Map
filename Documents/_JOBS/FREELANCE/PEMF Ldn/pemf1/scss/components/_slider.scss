@@ -1,5 +1,5 @@
-/* Carrousel */
-.carrousel {
+/* Carousel */
+.carousel {
   background: $primary-clr;
   text-align: center;
   padding: 4em 0;
@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
 }
-.carrousel h2 {
+.carousel h2 {
   margin: 0;
   margin-top: -1.7em;
   padding: 0;
@@ -17,7 +17,7 @@
   text-align: center;
   color: $tertiary-clr;
 }
-.carrousel .slides {
+.carousel .slides {
   width: 400%;
   left: 0;
   padding-left: 0;
@@ -27,15 +27,15 @@
   position: relative;
   transition: transform 0.5s;
 }
-.carrousel .slides li {
+.carousel .slides li {
   width: 25%;
   position: relative;
   float: left;
 }
-.carrousel li p {
+.carousel li p {
   margin-top: 0;
 }
-.carrousel li q {
+.carousel li q {
   max-width: 90%;
   margin: auto;
   color: $secondary-clr;
@@ -44,14 +44,14 @@
 }
 
 /* Author */
-.carrousel li span.author {
+.carousel li span.author {
   margin-top: 0.5em;
   font-size: 1.2em;
   color: $design1-clr;
   display: block;
 }
 /*  Fonctionality */
-.carrousel .slidesNavigation {
+.carousel .slidesNavigation {
   display: block;
   list-style: none;
   text-align: center;
@@ -64,10 +64,10 @@
   left: 50%; //Centering de element
   margin-left: -52px; //adjusting the centering by applying a negative margin of half of the width
 }
-.carrousel input {
+.carousel input {
   display: none;
 }
-.carrousel .slidesNavigation label {
+.carousel .slidesNavigation label {
   float: left;
   margin: 6px;
   display: block;
@@ -94,13 +94,13 @@
 #radio-4:checked ~ .slides {
   transform: translateX(-75%);
 }
-.carrousel .slidesNavigation label:hover {
+.carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
 // You have to repeat this with each slide/dot
-.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
-.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
-.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
-.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+.carousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
   background: $highlight-clr;
 }

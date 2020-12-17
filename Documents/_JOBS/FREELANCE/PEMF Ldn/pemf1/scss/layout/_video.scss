@@ -7,7 +7,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
+    p{
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+    .cta{
+      margin-right: 0;
+    }
   }
 }
 .iframe-ctnr {
