@@ -3,11 +3,11 @@
 
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "abstracts/slant-line";
-@import "base/reset";
 
-@import "base/typography";
 @import "base/reset";
+@import "base/typography";
+
+@import "abstracts/slant-line";
 
 @import "layout/navigation";
 @import "layout/hero";
