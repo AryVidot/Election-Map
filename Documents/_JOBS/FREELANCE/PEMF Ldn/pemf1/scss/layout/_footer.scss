@@ -1,1 +1,15 @@
+// Fixed footer at bottom of the page
 
+footer{
+    text-align: center;
+    background-color: $design1-clr;
+    // position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-direction: row;
+    z-index: 10;
+
+}

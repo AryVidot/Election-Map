@@ -2,40 +2,43 @@
   font-size: 2em;
   text-align: center;
 }
+
 .carousel-wrapper{
-  height:300px;
+  height:200px;
   position:relative;
   text-align:center;
   width:90%;
   margin:0 auto;
 }
+
 .carousel-item{
   position:absolute;
   top:0;
-  // bottom:0;
+  bottom:0;
   left:0;
   right:0;
-  padding:2.5% 2.5%;
+  padding:0 2%;
+  padding-bottom: 2%;
   opacity:0;
   transition: all 0.5s ease-in-out;
   p{
     font-size: 2em;
-    font-family: $title-font ;
+    font-family: $body-font;
   }
 }
 span.author { 
-  margin-top: 1em;
-  font-size: 1.2em;
+  margin-top: 0.8em;
+  font-size: 1em;
   color: rgba(242, 107, 107, 1);
   display: block;
   font-family: $body-font;
 }
 .arrow{
-  border: solid rgba(121, 242, 198, 0.4);
-  border-width: 0 5px 5px 0;
+  border: solid rgba(121, 242, 198, 0.6);
+  border-width: 0 7px 7px 0;
   border-radius: 5px;
   display: inline-block;
-  padding: 1rem;
+  padding: 1.2rem;
   transition: 0.2s ease-out;
 }
 .arrow:hover{
@@ -62,10 +65,22 @@ span.author {
   color:white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
+  .carousel-item p{
+    font-size: 1.5em;
+  }
+
   .arrow, .light .arrow {
     background-size: 10px;
     background-position: 10px 50%;
+  }
+  .arrow{
+    border: solid rgba(121, 242, 198, 0.6);
+    border-width: 0 4px 4px 0;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1rem;
+    transition: 0.2s ease-out;
   }
 }
 
