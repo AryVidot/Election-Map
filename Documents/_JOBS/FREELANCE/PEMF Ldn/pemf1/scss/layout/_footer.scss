@@ -1,15 +1,35 @@
 // Fixed footer at bottom of the page
+// https://www.youtube.com/watch?v=US_3XvufMLU
 
 footer{
+    height: 5%;
+    margin: 0 auto;
     text-align: center;
-    background-color: $design1-clr;
-    // position: absolute;
+    // background-color: $design1-clr;
+    // opacity: 0.9;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    width: 90%;
     position: fixed;
-    // display: flex;
-    // justify-content: space-between;
-    // flex-direction: row;
     z-index: 10;
-
+    .inner-ctnr{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1%;
+        margin: auto;
+        font-size: 1.2em;
+        i{
+            font-size: 1.2em;
+            cursor: pointer;
+            // padding-right: 1.2rem;
+        }
+    }
 }
+
+.inner-ctnr i:hover{
+color: $tertiary-clr;
+}
+// @media 

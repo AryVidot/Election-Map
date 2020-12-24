@@ -2,17 +2,33 @@ header{
   padding-top: 1.5rem;
 }
 
+.stickyHeader {
+  margin:0 auto;
+  padding-bottom: 1rem;
+
+}
+// "Sticky" style for JS
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  margin: auto;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding: 20px 10px;
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .logo {
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 

@@ -21,13 +21,13 @@ body {
 }
 
 main {
-  width: 90%;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: #071359;
+  cursor: pointer;
 }
 
 li {
@@ -64,8 +64,53 @@ span {
   color: #84d9c9;
 }
 
+CSS
+body {
+  background-color: orange;
+}
+
+.navigation {
+  -webkit-filter: drop-shadow(0 1px 1px #f2e85e);
+          filter: drop-shadow(0 1px 1px #f2e85e);
+}
+
+.innernav {
+  /* PATH */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100px, 100% 100%, 0 100px);
+          clip-path: polygon(0 0, 100% 0, 100% 100px, 100% 100%, 0 100px);
+  /* OTHERS */
+  background-color: silver;
+  color: white;
+  height: 150px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main {
+  padding: 200px 20px 0;
+  text-align: center;
+}
+
 header {
   padding-top: 1.5rem;
+}
+
+.stickyHeader {
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  margin: auto;
 }
 
 .nav {
@@ -81,10 +126,11 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10;
 }
 
 .logo {
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
@@ -113,7 +159,7 @@ header {
 
 .hero {
   width: 100%;
-  height: auto;
+  height: 70vh;
 }
 
 .hero .ctnr {
@@ -133,14 +179,20 @@ header {
 
 .hero .left {
   width: 50%;
-  padding-top: 40vh;
   max-width: 900px;
-  background: url("../../images/pemf-mat.jpg") no-repeat center/cover;
+  margin-right: -40%;
+}
+
+.hero .left img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #f2f2f2;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin-right: -40%;
 }
 
 .hero .right {
@@ -192,7 +244,6 @@ header {
   }
   .ctnr .left {
     width: 90%;
-    padding-top: 30vh;
     margin: 0 1.5rem;
   }
   .ctnr .right {
@@ -210,17 +261,8 @@ header {
   }
 }
 
-footer {
-  text-align: center;
-  background-color: #f2e85e;
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-}
-
 .video {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
   margin-top: 2rem;
 }
@@ -268,6 +310,7 @@ footer {
 
 .contact {
   height: 100vh;
+  padding-bottom: 4rem;
 }
 
 h2 {
@@ -284,15 +327,55 @@ i {
 }
 
 .final {
-  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
   height: auto;
+  margin: 2rem auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.final img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+footer {
+  height: 5%;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+}
+
+footer .inner-ctnr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1%;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+footer .inner-ctnr i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.inner-ctnr i:hover {
+  color: #005eb8;
 }
 
 .cta {

@@ -20,13 +20,14 @@ body {
 }
 
 main{
-  width: 90%;
+  // width: 100%;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: $secondary-clr;
+  cursor: pointer;
 }
 
 li {

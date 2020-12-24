@@ -6,7 +6,7 @@
     <script src="https://use.fontawesome.com/0148eaae50.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
           const yrSpan = document.querySelector(".year");
@@ -18,47 +18,74 @@
     <title>PEMF - About</title>
 </head>
 <body>
-    <div class="container">
+    <header id="stickyHeader">
         <div class="ctnr">
-            <header>
-                <nav class="header__nav">
-                    <h1 class="header__nav-logo">PEMF <span>Therapy</span></h1>
-                    <ul class="header__nav-menu">
-                        <li id="about" class="header__nav-link"><a id="about" href="./pages/about/about.html">About</a> </li>
-                        <li id="contact" class="header__nav-link"> <a id="contact" href="http://">Contact</a> </li>
+            <div class="nav">
+                <a href="/index.html">
+                    <img class="logo" src="../../images/logoSmall.jpg" alt="logo">
+                </a>
+                <nav>
+                    <ul class="nav__items">
+                        <li class="nav__link"><a class="active" id="about" href="./pages/about/about.html">About</a></li>
+                        <li class="nav__link"><a href="../../index.html#contact" >Contact</a></li>
                     </ul> 
                 </nav>
-            </header>
-            <main>
-                <div class="ctn">
-                    <section class="hero">
-                        <h1>More details</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia itaque iusto praesentium autem excepturi minima corrupti. Natus quisquam neque eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eaque?</p>
-                            <img src="" alt="" srcset="">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur.</p>
-                            <button class="btn" type="button"></button>
-                    </section>
-                    
-                </div>
-            </main>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <div class="ctn">
+            <h2>More details</h2>
+
+            <section class="about-hero">
+                <div class="ctnr">
+                    <!-- image here -->
+                    <div class="left">
+                        <img src="../../images/pemf-matt-field.jpg"></img>
+                    </div>
+    
+                    <!-- content here -->
+                    <div class="right">
+                        <div class="hero__content">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. dolor sit amet. Ipsum dolor sit amet consectetur.</p>
+                            <a href="../../index.html#contact" class="cta" type="button">Hire Now</a>
+                            <!-- <a href="./pages/about/about.html" class="cta" type="button">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+    
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia itaque iusto praesentium autem excepturi minima corrupti. Natus quisquam neque eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eaque?</p>
+                    <img src="" alt="" srcset="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+                    <a class="cta" type="button"></a> -->
+            </section>
+        </div>
+    </main>
 
     <footer>
         <div class="ctnr">
-            <a href="http://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-
-            <!-- Social Media Starts -->
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play " ></i></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-facebook-square'></i></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-instagram'></i></a>
-            <!-- Social media Ends -->
-
-            <p><span class="year">2019</span> PEMF Therapy</p>
+            <div class="inner-ctnr">
+                <div class="tc">
+                    <a href="assets/TermsAndConditions.pdf" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+                </div>
+                <div class="socials">
+                    <!-- Social Media Starts -->
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play " ></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-facebook-square'></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class='fa fa-instagram'></i></a>
+                    <!-- Social media Ends -->
+                </div>
+                <div class="copyright">
+                    <p>
+                        <script>document.write(new Date().getFullYear());</script> PEMF Therapy
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- Scripts -->
-    <script src="main.js"></script>
+    <script src="../../main.js"></script>
 </body>
 
 </html>

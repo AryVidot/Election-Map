@@ -1,5 +1,7 @@
 .contact{
     height: 100vh;
+    padding-bottom: 4rem;
+
 }
 h2{
     font-family: $title-font;
@@ -12,13 +14,12 @@ i{
     padding-right: 1rem;
 }
 .final{
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
     height: auto;
-    // margin: auto;
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
 }
